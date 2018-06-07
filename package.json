@@ -1,0 +1,24 @@
+{
+  "name": "twilio-app",
+  "version": "1.0.0",
+  "description": "Send SMS via Twilio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushil-magar/twilio-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sushil-magar/twilio-app/issues"
+  },
+  "homepage": "https://github.com/sushil-magar/twilio-app#readme",
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "twilio": "^3.17.2",
+    "yarn": "^1.7.0"
+  }
+}
