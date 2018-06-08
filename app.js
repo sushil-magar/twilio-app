@@ -1,9 +1,11 @@
-const accountSid = 'ACf16a15e6580453747fdabd8a4bea17d8';
-const accountToken = '3b4f4d6cc15a258a8397cfe0e7bd30bb';
+require('dotenv').config({silent: true});
 
-const client = require('twilio')(accountSid, accountToken);
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const accountToken = process.env.TWILIO_AUTH_TOKEN;
 
-client
+const TwilioClient = require('twilio')(accountSid, accountToken);
+
+TwilioClient
   .messages.create({
     body: 'Hi this is Sushil.',
     from: '+15005550006',
